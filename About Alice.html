@@ -1,0 +1,186 @@
+# Alice-Souza
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Alice Souza </title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Georgia", serif;
+            background-color: #f9f5f7;
+            color: #3a2e2e;
+        }
+
+        header {
+            background-color: white;
+            padding: 25px;
+            border-bottom: 1px solid #e8dbe2;
+            text-align: center;
+        }
+
+        h1 {
+            color: #d07fa5;
+            font-size: 40px;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #fff;
+            border-bottom: 1px solid #eed7e5;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 12px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-size: 17px;
+            color: #c2648c;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            max-width: 750px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 10px;
+            border: 1px solid #eed7e5;
+            box-shadow: 0px 2px 6px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #c2648c;
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 10px;
+            color: #a68899;
+            font-size: 14px;
+        }
+
+        /* escondendo as seções para “multipágina fake” */
+        .page {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+    </style>
+
+    <script>
+        function showPage(pageId){
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
+</head>
+
+<body>
+
+<header>
+    <h1>Alice Souza</h1>
+</header>
+
+<nav>
+    <a href="#" onclick="showPage('home')">Home</a>
+    <a href="#" onclick="showPage('about')">About Me</a>
+    <a href="#" onclick="showPage('study')">Estudos</a>
+    <a href="#" onclick="showPage('projects')">Projetos</a>
+    <a href="#" onclick="showPage('socials')">Socials</a>
+    <a href="#" onclick="showPage('newsletter')">Newsletter</a>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="page active">
+    <div class="card">
+        <h2>Bem-vinda ✨</h2>
+        <p>
+            Eu sou a Alice — estudante, escritora, apaixonada por estética soft-academia,
+            livros, girlboss vibes e todo esse universo de ser uma mulher jovem com ambição.
+        </p>
+    </div>
+</section>
+
+<!-- ABOUT ME -->
+<section id="about" class="page">
+    <div class="card">
+        <h2>About Me</h2>
+        <p>
+            Sou uma garota de 14 anos que vive entre livros, playlists, cafés gelados 
+            e a vontade absurda de construir algo grande.  
+        </p>
+        <p>
+            Inspirações: Elle Woods, Blair Waldorf, Emma Watson, Natalie Portman, Rory Gilmore.  
+        </p>
+    </div>
+</section>
+
+<!-- ESTUDOS -->
+<section id="study" class="page">
+    <div class="card">
+        <h2>Study Room 📚</h2>
+        <p>• Soft Academia aesthetic ✨</p>
+        <p>• Olimpíadas • Dual Diploma • rotina de estudos</p>
+        <p>• Objetivo: Harvard e outras universidades de alto nível</p>
+    </div>
+</section>
+
+<!-- PROJETOS -->
+<section id="projects" class="page">
+    <div class="card">
+        <h2>Projetos</h2>
+        <p>• The Overthinker Girls’ Club — minha newsletter</p>
+        <p>• Canal no YouTube (coming soon)</p>
+        <p>• TikTok de estudo e rotina acadêmica</p>
+    </div>
+</section>
+
+<!-- REDES -->
+<section id="socials" class="page">
+    <div class="card">
+        <h2>Social Links</h2>
+        <p>TikTok: @seuuser</p>
+        <p>YouTube: seu canal</p>
+        <p>Substack: seu link</p>
+    </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section id="newsletter" class="page">
+    <div class="card">
+        <h2>Newsletter 💌</h2>
+        <p>
+            Textos profundos, vibes estéticas, reflexões sobre ambição feminina, vida acadêmica,
+            literatura, identidade e o processo de se transformar na melhor versão de si mesma.
+        </p>
+    </div>
+</section>
+
+<footer>
+   © 2025 — Feito por Alice com ✨soft academia energy✨
+</footer>
+
+</body>
+</html>
